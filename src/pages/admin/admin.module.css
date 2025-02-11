@@ -1,0 +1,64 @@
+.gridContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platinumGridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.goldGridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.silverGridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.gridCell {
+    border-radius: 16px;
+    border: 1px solid #001529;
+    height: 60px;
+}
+
+.cellPlatinum {
+    background-color: #50c878;
+}
+
+.cellGold {
+    background-color: #FFD700;
+}
+
+.cellSilver {
+    background-color: #C0C0C0;
+}
+
+.userGridContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    gap: 8px;
+}
+
+.cellIndex{
+    font-size: 16px;
+    font-weight: 600;
+    color: #001529;
+}
+
+.userSelect {
+    flex-grow: 1;
+}

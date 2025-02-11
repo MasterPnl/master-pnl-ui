@@ -1,0 +1,63 @@
+.gridContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platinumGridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.goldGridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.silverGridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.gridCell {
+    border-radius: 16px;
+    border: 1px solid #001529;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabledCell {
+    cursor: not-allowed;
+    background-color: #b1b1b1;
+}
+
+.notOwnerCell{
+    font-size: 16px;
+    font-weight: 600;
+    color: #001529;
+    text-align: center;
+    display: block;
+    padding: 24px;
+}
+
+.listingButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.listingButtons > span{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
