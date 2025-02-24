@@ -32,7 +32,7 @@ const UserPanelManagement = () => {
     }, []);
 
     useEffect(() => {
-        if (users.length && showCaseUsers.length) {
+        if (users.length) {
             const totalCell = SHOWCASE_TYPES.reduce((acc, {key, rows}) => acc + columnCount[key] * rows, 0);
             let _userSelectValues = [];
             for (let i = 0; i < totalCell; i++) {

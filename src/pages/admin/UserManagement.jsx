@@ -114,7 +114,7 @@ const UserManagement = () => {
 
                 <Form.Item
                     name="password"
-                    label="Password"
+                    label="Şifre"
                     rules={[
                         {
                             required: true,
