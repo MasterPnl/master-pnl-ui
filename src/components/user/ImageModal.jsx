@@ -1,4 +1,4 @@
-import {Button, Flex, Image, Modal, Space, Typography, Upload} from "antd";
+import {Button, Flex, Image, Modal, notification, Space, Typography, Upload} from "antd";
 import PropTypes from "prop-types";
 import 'react-quill/dist/quill.snow.css';
 import {UploadOutlined} from "@ant-design/icons";
@@ -53,6 +53,10 @@ const ListingImageModal = (props) => {
         fileList: fileList,
         onPreview: handlePreview,
         onSuccess: async (response) => {
+            notification.destroy();
+            notification.success({
+                message: 'Görsel başarıyla yüklendi!',
+            });
             const image = {
                 uid: response.id,
                 name: response.path,
@@ -68,6 +72,14 @@ const ListingImageModal = (props) => {
             } catch (error) {
                 console.log(error)
                 return false;
+            }
+        },
+        onError: () => {
+            notification.destroy();
+            if(fileList.length === 3){
+                notification.error({
+                    message: 'İlanın en fazla 3 resmi yüklenebilir!',
+                });
             }
         }
     };

@@ -9,7 +9,7 @@ const DEFAULT_CONFIG = { platinum: 2, gold: 3, silver: 4 };
 const SHOWCASE_TYPES = [
     { key: "platinum", columns: 2 },
     { key: "gold", columns: 3 },
-    { key: "silver", columns: 5 }
+    { key: "silver", columns: 4 }
 ];
 
 const PanelManagement = () => {
