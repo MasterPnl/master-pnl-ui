@@ -1,11 +1,10 @@
-import {Button, Form, Input, Modal, notification} from "antd";
+import {Form, Input, Modal, notification} from "antd";
 import PropTypes from "prop-types";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import {useState} from "react";
 import {LockOutlined, PhoneOutlined} from "@ant-design/icons";
 import {stripHtmlTags} from "@/utils/helpers.js";
-import {ListingService} from "@/services/listing.service.js";
 
 // Quill editöründe kullanılacak toolbar
 const modules = {
