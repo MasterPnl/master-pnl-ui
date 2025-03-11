@@ -90,7 +90,7 @@ const ListingModal = (props) => {
                     label="Telefon"
                     rules={[
                         {required: true, message: "Telefon numarası gereklidir!"},
-                        {pattern: /^[0-9]{10}$/, message: "Geçersiz telefon numarası! (10 haneli olmalı)"}
+                        { pattern: /^\+\d{1,3}\s?\d{10}$/, message: "Geçersiz telefon numarası! (Ülke kodu ile birlikte giriniz, örn: +90 5551234567)" }
                     ]}
                 >
                     <Input
